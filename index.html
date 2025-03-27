@@ -1,9 +1,183 @@
-<!DOCTYPE>
-<html>
-  <head>
-    <title>Page!</title>
-  </head>
-  <body>
-    <h1>Welcome to my page!</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhananjay Singh - Developer Resume</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'Minecraftia';
+      src: url('https://www.fontsaddict.com/fontface/minecraftia.ttf');
+    }
+
+    body {
+      font-family: 'Minecraftia', monospace;
+      background-color: #79B74A;
+      color: #FFF;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      text-shadow: 2px 2px 0px #3D642D;
+    }
+
+    .resume-container {
+      background: #3D642D;
+      width: 800px;
+      padding: 30px;
+      border: 8px solid #2A4A1B;
+      box-shadow: 10px 10px 0px #1A2E11;
+    }
+
+    h1, h2 {
+      font-family: 'Minecraftia', monospace;
+      color: #FFF;
+      text-decoration: underline;
+      text-shadow: 3px 3px 0px #000;
+    }
+
+    .contact-info {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 25px;
+      color: #FFF;
+    }
+
+    .contact-info a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #FFF;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      border: 3px solid #2A4A1B;
+      background-color: #4E7D3C;
+    }
+
+    th, td {
+      border: 3px solid #2A4A1B;
+      padding: 12px;
+      text-align: left;
+      color: #FFF;
+    }
+
+    th {
+      background-color: #2A4A1B;
+    }
+
+    tr:hover td {
+      background-color: #5C8F45;
+    }
+  </style>
+</head>
+<body>  
+  <div class="resume-container">
+    <header>
+      <h1>Dhananjay Singh</h1>
+      <p class="contact-info">
+        📧 <a href="mailto:dhannjaysingh@gmail.com" target="_blank">dhannjaysingh@gmail.com</a> |
+        📍 Remote, India |
+        <a href="https://github.com/dha-aa" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/dhananjaydiwan" target="_blank">LinkedIn</a>
+      </p>
+    </header>
+    
+    <section>
+      <h2>Summary</h2>
+      <p>Experienced Full-Stack Developer skilled in JavaScript, Python, React, Next.js, Node.js, PostgreSQL, and Web3. Passionate about building scalable applications, AI agents, and Web3 solutions.</p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <table>
+        <tr>
+          <th>Job Title</th>
+          <th>Company</th>
+          <th>Year</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>AI Engineer</td>
+          <td>Tweet Money</td>
+          <td>2024-Nov 2025-Jan</td>
+          <td>Developed AI automation for extracting tweets and worked on Web3 integrations.</td>
+        </tr>
+        <tr>
+          <td>Full-Stack Developer</td>
+          <td>Fleelace</td>
+          <td>2025 - Present</td>
+          <td>Built web applications using Next.js, PostgreSQL, and AI-powered solutions.</td>
+        </tr>
+        <tr>
+          <td>Video Editor</td>
+          <td>Freelance</td>
+          <td>2022 - Present</td>
+          <td>Editing videos for social media content creation.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>Self-Taught Developer</td>
+          <td>Internet & Online Learning</td>
+          <td>2019 - Present</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>JavaScript, Python, TypeScript, React, Next.js</li>
+        <li>Node.js, PostgreSQL, MongoDB</li>
+        <li>Git, CI/CD, Docker, Web3</li>
+        <li>AI Agents, Web3</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <table>
+        <tr>
+          <th>Project Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>AI Learning Platform</td>
+          <td>Developed an AI-powered platform to enhance JavaScript learning.</td>
+        </tr>
+        <tr>
+          <td>Git-Single</td>
+          <td>A tool to download specific files or directories from GitHub repositories.</td>
+        </tr>
+        <tr>
+          <td>Web3 Integration</td>
+          <td>Developed blockchain-based authentication and payment systems.</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</body>
 </html>
