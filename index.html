@@ -1,88 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhananjay Singh - Developer Resume</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhananjay</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex justify-center p-10">
-  <div class="bg-white w-[800px] p-8 rounded-lg shadow-lg border border-gray-300">
-    <header class="text-center">
-      <h1 class="text-3xl font-bold text-gray-800 border-b-2 pb-2">Dhananjay Singh</h1>
-      <p class="mt-2 text-gray-600">
-        📧 <a href="mailto:dhannjaysingh@gmail.com" class="text-blue-500 font-medium">dhannjaysingh@gmail.com</a> |
-        📍 Remote, India |
-        <a href="https://github.com/dha-aa" class="text-blue-500 font-medium">GitHub</a> |
-        <a href="https://linkedin.com/dhananjaydiwan" class="text-blue-500 font-medium">LinkedIn</a>
-      </p>
-    </header>
+<body class="bg-black text-white min-h-screen flex items-center justify-center">
 
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold text-gray-700 border-b-2 pb-1">Summary</h2>
-      <p class="mt-2 text-gray-600">Experienced Full-Stack Developer skilled in JavaScript, Python, React, Next.js, Node.js, PostgreSQL, and Web3. Passionate about building scalable applications, AI agents, and Web3 solutions.</p>
-    </section>
-
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold text-gray-700 border-b-2 pb-1">Contributed</h2>
-      <p class="mt-2 text-gray-600">here is the github repo where i contributed</p>
-    </section>
-
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold text-gray-700 border-b-2 pb-1">Projects</h2>
-      <div class="overflow-x-auto mt-3">
-        <table class="w-full text-left border-collapse border border-gray-300 rounded-lg">
-          <thead class="bg-gray-200">
-            <tr>
-              <th class="p-3 border-b">Project Name</th>
-              <th class="p-3 border-b">Description</th>
-              <th class="p-3 border-b">Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hover:bg-gray-100">
-              <td class="p-3 border-b">Js-Explorer</td>
-              <td class="p-3 border-b">A website with Markdown files for fast and effective JavaScript learning.</td>
-              <td class="p-3 border-b"><a href="https://js-journey-explorer.lovable.app/" class="text-blue-500">Visit</a></td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="p-3 border-b">Git-Single</td>
-              <td class="p-3 border-b">A tool to download specific files or directories from GitHub repositories.</td>
-              <td class="p-3 border-b"><a href="https://github.com/dha-aa/git-single" class="text-blue-500">GitHub</a></td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="p-3 border-b">Web3 Integration</td>
-              <td class="p-3 border-b">Blockchain-based authentication and payment systems.</td>
-              <td class="p-3 border-b"><a href="https://web3-auth.com" class="text-blue-500">Visit</a></td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="w-full max-w-md space-y-6 p-6 border border-neutral-800 rounded-lg">
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+      <h1 class="text-xl font-medium">Dhananjay</h1>
+      <div class="flex space-x-4 text-sm">
+        <button id="projectsBtn" class="text-neutral-500 hover:text-green-300 transition-colors">Projects</button>
+        <button id="contributeBtn" class="text-neutral-500 hover:text-green-300 transition-colors">Contributions</button>
       </div>
-    </section>
+    </div>
 
-    <section class="mt-6">
-      <h2 class="text-xl font-semibold text-gray-700 border-b-2 pb-1">Experience</h2>
-      <div class="overflow-x-auto mt-3">
-        <table class="w-full text-left border-collapse border border-gray-300 rounded-lg">
-          <thead class="bg-gray-200">
-            <tr>
-              <th class="p-3 border-b">Job Title</th>
-              <th class="p-3 border-b">Company</th>
-              <th class="p-3 border-b">Year</th>
-              <th class="p-3 border-b">Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hover:bg-gray-100">
-              <td class="p-3 border-b">AI Engineer</td>
-              <td class="p-3 border-b">Tweet Money</td>
-              <td class="p-3 border-b">2024-Nov 2025-Jan</td>
-              <td class="p-3 border-b">Developed AI automation for extracting tweets and worked on Web3 integrations.</td>
-            </tr>
-            <tr class="hover:bg-gray-100">
-              <td class="p-3 border-b">Full-Stack Developer</td>
-              <td class="p-3 border-b">N/A</td>
-              <td class="p-3 border-b">2025 - Present</td>
-              <td class="p-3 border-b">Built
+    <div class="h-px bg-neutral-800"></div>
+
+    <!-- Content -->
+    <div id="content" class="min-h-32 space-y-4">
+      <h2 class="text-green-400 font-medium text-lg">About</h2>
+      <p class="text-sm text-neutral-300">
+        Hi, I'm a developer specializing in AI and web applications. I build intuitive tools that solve real problems.
+      </p>
+      <p class="text-sm text-neutral-300">
+        Currently focused on machine learning integration with modern web frameworks.
+      </p>
+    </div>
+
+    <div class="h-px my-4 bg-neutral-800"></div>
+
+    <!-- Social Links -->
+    <div class="flex items-center">
+      <a href="https://github.com/dha-aa" target="_blank" class="p-2 text-neutral-500 hover:text-blue-400 transition-colors" aria-label="GitHub">
+        <i data-lucide="github" class="w-5 h-5"></i>
+      </a>
+      <a href="#" target="_blank" class="p-2 text-neutral-500 hover:text-blue-400 transition-colors" aria-label="Blog">
+        <i data-lucide="book-open" class="w-5 h-5"></i>
+      </a>
+      <a href="https://x.com/dhaannjay" target="_blank" class="p-2 text-neutral-500 hover:text-blue-400 transition-colors" aria-label="Twitter/X">
+        <i data-lucide="twitter" class="w-5 h-5"></i>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const projects = [
+      { name: "git-single", tech: "Bash", link: "https://github.com/dha-aa/git-single.git" },
+    ];
+
+    const contributions = [
+      { name: "OpenAI Prompt Collection", org: "OpenAI Community", link: "#" },
+      { name: "Next.js Boilerplate", org: "Vercel", link: "#" },
+    ];
+
+    const contentEl = document.getElementById("content");
+    const projectsBtn = document.getElementById("projectsBtn");
+    const contributeBtn = document.getElementById("contributeBtn");
+
+    let activeTab = null;
+
+    function renderContent(tab) {
+      contentEl.innerHTML = "";
+      let html = "";
+
+      if (tab === "projects") {
+        html += `<h2 class="text-green-400 font-medium text-lg">Projects</h2>`;
+        projects.forEach(project => {
+          html += `
+            <div class="group">
+              <div class="flex items-center justify-between">
+                <h3 class="font-medium text-white">${project.name}</h3>
+                <a href="${project.link}" target="_blank" class="opacity-0 group-hover:opacity-100 transition-opacity text-neutral-500 hover:text-green-400">
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+              </div>
+              <p class="text-xs text-neutral-500 mt-1">${project.tech}</p>
+            </div>
+          `;
+        });
+      } else if (tab === "contribute") {
+        html += `<h2 class="text-green-400 font-medium text-lg">Contributions</h2>`;
+        contributions.forEach(contrib => {
+          html += `
+            <div class="group">
+              <div class="flex items-center justify-between">
+                <h3 class="font-medium text-white">${contrib.name}</h3>
+                <a href="${contrib.link}" class="opacity-0 group-hover:opacity-100 transition-opacity text-neutral-500 hover:text-green-400">
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+              </div>
+              <p class="text-xs text-neutral-500 mt-1">${contrib.org}</p>
+            </div>
+          `;
+        });
+      } else {
+        html += `
+          <h2 class="text-green-400 font-medium text-lg">About</h2>
+          <p class="text-sm text-neutral-300">Hi, I'm a developer specializing in AI and web applications. I build intuitive tools that solve real problems.</p>
+          <p class="text-sm text-neutral-300">Currently focused on machine learning integration with modern web frameworks.</p>
+        `;
+      }
+
+      contentEl.innerHTML = html;
+      lucide.createIcons();
+    }
+
+    projectsBtn.addEventListener("click", () => {
+      activeTab = activeTab === "projects" ? null : "projects";
+      renderContent(activeTab);
+      updateTabStyles();
+    });
+
+    contributeBtn.addEventListener("click", () => {
+      activeTab = activeTab === "contribute" ? null : "contribute";
+      renderContent(activeTab);
+      updateTabStyles();
+    });
+
+    function updateTabStyles() {
+      projectsBtn.classList.toggle("text-green-400", activeTab === "projects");
+      projectsBtn.classList.toggle("text-neutral-500", activeTab !== "projects");
+
+      contributeBtn.classList.toggle("text-green-400", activeTab === "contribute");
+      contributeBtn.classList.toggle("text-neutral-500", activeTab !== "contribute");
+    }
+  </script>
+</body>
+</html>
